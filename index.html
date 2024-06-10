@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="stylesheet" href="estilos/flexboxgrid.min.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico.jpg">
+    <title>MotoSelector</title>
+   
+    <script type="text/javascript"> 
+        function muestra(capa) { 
+            var capas = document.getElementsByTagName("div")
+            for(var i=0; i<capas.length; i++) { 
+                    if(capas[i].className == "articulo visible") 
+                    capas[i].className = "articulo oculto"; 
+                 }
+            var elemento = document.getElementById(capa); 
+            elemento.className = "articulo visible"; 
+        } 
+    </script>
+</head>
+<body>
+    <header class="row">
+            <div class="col-xs-12 col-sm-4">
+                    <img src="/Leonardo_Creative_Design_a_logo_for_your_website_a_guide_to_fi_3.jpg" width="200" height="160" alt="Logo " class="enlace-imagen">
+                    <h1>MotoSelector</h1>
+            </div>
+            <div class="col-xs-12 col-sm-8">
+                <nav>
+                    <ul>
+                        <a href="#bmw" onclick="muestra('bmw')"><li>BMW</li></a>
+                        <a href="#kawa" onclick="muestra('kawa')"><li>KAWASAKI</li></a>
+                        <a href="#yamaha" onclick="muestra('yamaha')"><li>YAMAHA</li></a>
+                        <a href="#enlaces" onclick="muestra('enlaces')"><li>ENLACES DE COMPRA</li></a>
+                        <a href="#arti5" onclick="muestra('arti5')"><li>CONTACTO</li></a>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+    <div class="contenido">
+        <div class="row">
+            <div class="col-xs-12 col-sm-9 last-xs first-sm">
+                <div id="bmw" class="articulo visible">
+                    <h1>BMW</h1>
+                    <div class="contenedor-imagen">
+                        <img src="/BMW.jpg" width="120" height="120" alt="Logobmw " class="logo3d">
+                    </div>
+                    <table>
+                        <tr>
+                          <th>Tipo</th>
+                          <th>Modelo</th>
+                          <th>Descripción</th>
+                          <th>Imagen</th>
+                        </tr>
+                        <tr>
+                          <td>Trail</td>
+                          <td>BMW F 850 GS</td>
+                          <td>La BMW F 850 GS es una moto de aventura versátil y poderosa. Equipada con un motor de 853 cc, esta moto ofrece una potencia impresionante tanto en carreteras asfaltadas como en terrenos off-road. Su diseño ergonómico y su suspensión ajustable garantizan una conducción cómoda y segura en todo momento.</td>
+                          <td><img src="/bmwf850gs.jpg" width="140" height="120" alt="BMW F 850 GS" class="enlace-imagen"></td>
+                        </tr>
+                        <tr>
+                          <td>Naked Sport</td>
+                          <td>BMW S 1000 R</td>
+                          <td>La BMW S 1000 R es una moto naked de alto rendimiento con un estilo agresivo y deportivo. Impulsada por un motor de 999 cc, esta moto ofrece una experiencia de conducción emocionante y dinámica. Su diseño aerodinámico y su avanzado sistema de suspensión permiten un manejo preciso y ágil.</td>
+                          <td><img src="/bmws1000r.jpg" width="140" height="120" alt="BMW S 1000 R" class="enlace-imagen"></td>
+                        </tr>
+                        <tr>
+                          <td>Scooter</td>
+                          <td>BMW C 650 GT</td>
+                          <td>La BMW C 650 GT es un scooter cómodo y potente, ideal para desplazamientos urbanos y viajes largos. Equipado con un motor de 647 cc, este scooter ofrece un rendimiento suave y ágil. Su diseño elegante y aerodinámico proporciona una excelente protección contra el viento y las inclemencias del tiempo.</td>
+                          <td><img src="/bmwscooter.jpg" width="140" height="120" alt="BMW C 650 GT" class="enlace-imagen"></td>
+                        </tr>
+                        <tr>
+                          <td>Chopper</td>
+                          <td>BMW R 18</td>
+                          <td> La BMW R 18 es una chopper de aspecto clásico con un motor potente y un diseño retro. Impulsada por un motor boxer de 1802 cc, esta chopper ofrece un rendimiento suave y una conducción relajada. Su diseño destacado y detalles de calidad, como el depósito de combustible en forma de lágrima y los escapes dobles, le otorgan un estilo distintivo.</td>
+                          <td><img src="/bmwchopper.jpg" width="140" height="120" alt="BMW R 18" class="enlace-imagen"></td>
+                        </tr>
+                      </table>
+                </div>
+                <div id="kawa" class="articulo oculto">
+                    <h1>Kawasaki</h1>
+                    <div class="contenedor-imagen">
+                        <img src="/kawa.png" width="120" height="120" alt="Logokawa" class="logo3d">
+                    </div>
+                    <table>
+                        <tr>
+                          <th>Tipo</th>
+                          <th>Modelo</th>
+                          <th>Descripción</th>
+                          <th>Imagen</th>
+                        </tr>
+                        <tr>
+                          <td>Trail</td>
+                          <td>Kawasaki Versys 1000</td>
+                          <td>La Kawasaki Versys 1000 es una moto de aventura de alto rendimiento diseñada para los amantes de los viajes largos y emocionantes. Con su motor de 1043 cc y su chasis robusto, esta moto ofrece una combinación perfecta de potencia, comodidad y maniobrabilidad. Su carenado aerodinámico y su sistema de suspensión ajustable permiten enfrentar diversos tipos de terreno con facilidad.</td>
+                          <td><img src="/kawaversys.jpg" width="140" height="120" alt="Kawasaki Versys 1000" class="enlace-imagen"></td>
+                        </tr>
+                        <tr>
+                          <td>Naked Sport</td>
+                          <td>Kawasaki Z900</td>
+                          <td>La Kawasaki Z900 es una moto naked de alto rendimiento que combina estilo agresivo y potencia emocionante. Impulsada por un motor de 948 cc, esta moto ofrece una aceleración rápida y una experiencia de conducción emocionante. Su diseño aerodinámico y su chasis ligero proporcionan un manejo ágil y preciso.</td>
+                          <td><img src="/kawaz900.jpg" width="140" height="120" alt="Kawasaki Z900" class="enlace-imagen"></td>
+                        </tr>
+                        <tr>
+                          <td>Scooter</td>
+                          <td>Kawasaki J300</td>
+                          <td>El Kawasaki J300 es un scooter urbano con un diseño moderno y un rendimiento ágil. Equipado con un motor de 299 cc, este scooter ofrece una aceleración suave y una conducción cómoda en entornos urbanos. Su tamaño compacto y su bajo peso facilitan la maniobrabilidad en el tráfico urbano.</td>
+                          <td><img src="/kawascooter.jpg" width="140" height="120" alt="Kawasaki J300" class="enlace-imagen"></td>
+                        </tr>
+                        <tr>
+                          <td>Chopper</td>
+                          <td>Kawasaki Vulcan S</td>
+                          <td> La Kawasaki Vulcan S es una chopper moderna con un motor potente y una postura de conducción cómoda. Impulsada por un motor de 649 cc, esta chopper ofrece una combinación equilibrada de potencia y manejabilidad. Su diseño elegante y su asiento ajustable permiten adaptar la moto a diferentes estaturas y preferencias de conducción.</td>
+                          <td><img src="/kawavulcan.jpg" width="140" height="120" alt="Kawasaki Vulcan S" class="enlace-imagen"></td>
+                        </tr>
+                      </table>
+                </div>
+                <div id="yamaha" class="articulo oculto">
+                    <h1>Yamaha</h1>
+                    <div class="contenedor-imagen">
+                        <img src="/yamaha.png" width="120" height="120" alt="Logoyamaha" class="logo3d">
+                    </div>
+                    <table>
+                        <tr>
+                          <th>Tipo</th>
+                          <th>Modelo</th>
+                          <th>Descripción</th>
+                          <th>Imagen</th>
+                        </tr>
+                        <tr>
+                          <td>Trail</td>
+                          <td>Yamaha Ténéré 700</td>
+                          <td>La Yamaha Ténéré 700 es una moto de aventura todo terreno diseñada para aquellos que buscan explorar nuevos horizontes y disfrutar del rendimiento fuera de carretera. Equipada con un motor de 689 cc y un chasis resistente, esta moto ofrece una potencia y agilidad impresionantes en cualquier terreno. Su diseño robusto y su suspensión de largo recorrido permiten enfrentar obstáculos y caminos accidentados con confianza.</td>
+                          <td><img src="/tenere.jpg" width="140" height="120" alt="Yamaha Ténéré 700" class="enlace-imagen"></td>
+                        </tr>
+                        <tr>
+                          <td>Naked Sport</td>
+                          <td>Yamaha MT-09</td>
+                          <td>La Yamaha MT-09 es una moto naked de alta potencia que combina un diseño agresivo con un rendimiento emocionante. Impulsada por un motor tricilíndrico de 847 cc, esta moto ofrece una aceleración impresionante y una experiencia de conducción dinámica. Su estilo vanguardista y sus líneas angulares le dan un aspecto moderno y llamativo.</td>
+                          <td><img src="/mt09.jpg" width="140" height="120" alt="Yamaha MT-09" class="enlace-imagen"></td>
+                        </tr>
+                        <tr>
+                          <td>Scotter</td>
+                          <td>Yamaha XMAX 300</td>
+                          <td>La Yamaha XMAX 300 es un scooter versátil y cómodo que combina estilo, rendimiento y funcionalidad. Diseñado para ofrecer un equilibrio perfecto entre desplazamientos urbanos ágiles y viajes de larga distancia, este scooter destaca por su rendimiento suave y eficiente. Impulsado por un motor de 292 cc de cuatro tiempos y refrigerado por líquido, la XMAX 300 ofrece una potencia y aceleración suficientes para moverte con agilidad en el tráfico de la ciudad.</td>
+                          <td><img src="/yamahaxmax.jpg" width="140" height="120" alt="Yamaha XMAX 300" class="enlace-imagen"></td>
+                        </tr>
+                        <tr>
+                          <td>Scrambler</td>
+                          <td>Yamaha SCR950</td>
+                          <td>La Yamaha SCR950 es una moto scrambler de estilo retro que combina la estética clásica con la funcionalidad moderna. Con un motor de 942 cc y un diseño inspirado en las motos de la vieja escuela, esta moto captura la esencia del motociclismo vintage. Su posición de conducción relajada y su suspensión de largo recorrido ofrecen comodidad tanto en la ciudad como en caminos sin pavimentar.</td>
+                          <td><img src="/yamahachoppper.jpg" width="140" height="120" alt="Yamaha SCR950" class="enlace-imagen"></td>
+                        </tr>
+                      </table>
+                </div>
+                <div id="enlaces" class="articulo oculto">
+                    <h1>Enlaces de compra</h1>
+                    <table>
+                      <tr>
+                        <td style="padding: 5px; border: none;padding-left: 160px;padding-top: 32px;"><a class="enlaces" href="https://www.bmw-motorrad.es/es/home.html#/filter-todo" target="_blank"><img src="/BMW.jpg" width="190" height="165" alt="Yamaha XMAX 300" class="enlace-imagen"></a><br><br></td>
+                        <td style="padding: 5px; border: none;padding-top: 32px;"><a class="enlaces" href="https://www.kawasaki.es/es/products" target="_blank"><img src="/kawa.png" width="190" height="165" alt="Yamaha XMAX 300" class="enlace-imagen"></a><br><br></td>
+                        <td style="padding: 5px; border: none;padding-left: 100px;"><a class="enlaces" href="https://www.yamaha-motor.eu/es/es/?gclid=CjwKCAjwvJyjBhApEiwAWz2nLUuUKwujhejBRIYwV7dx8rX8Hv74cRykVX3pLNZCeUnAN9_KgEXviRoCNVIQAvD_BwE" target="_blank"><img src="/yamaha.png" width="190" height="165" alt="Yamaha XMAX 300" class="enlace-imagen"></a></td>
+                      </tr>
+                    </table>
+                  </div>  
+                <div id="arti5" class="articulo oculto">
+                    <form action="#" method="post">
+                        <h2>Formulario de contacto</h2>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="telefono">Teléfono:</label>
+                        <input type="text" id="telefono" name="telefono">
+                        
+                        <label for="interes">Interés en el proyecto:</label>
+                        <select id="interes" name="interes">
+                            <option value="información">Más información</option>
+                            <option value="colaboración">Colaboración</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                        
+                        <label for="comentarios">Comentarios:</label>
+                        <textarea id="comentarios" name="comentarios"></textarea>
+                        
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+                <div id="trail" class="articulo oculto">
+                    <h1>Comparativa Trail</h1>
+                    <div class="motorcycle">
+                        <img src="/bmwf850gs.jpg" width="220" height="240" alt="BMW F 850 GS" class="enlace-imagen">
+                        <div class="motorcycle-info">
+                          <h2>BMW F 850 GS</h2>
+                          <p>Potencia y rendimiento:</p>
+                          <p>- Motor bicilíndrico en línea de 853 cc</p>
+                          <p>- Control de tracción y modos de conducción</p>
+                          <p>Características off-road:</p>
+                          <p>- Suspensión de largo recorrido</p>
+                          <p>- Sistema de frenos ABS off-road</p>
+                          <p>Estilo y diseño:</p>
+                          <p>- Diseño robusto y aventurero</p>
+                        </div>
+                      </div>
+                    
+                      <div class="motorcycle">
+                        <img src="/kawaversys.jpg" width="220" height="240" alt="Kawasaki Versys 1000" class="enlace-imagen">
+                        <div class="motorcycle-info">
+                          <h2>Kawasaki Versys 1000</h2>
+                          <p>Potencia y rendimiento:</p>
+                          <p>- Motor de cuatro cilindros en línea de 1,043 cc</p>
+                          <p>- Control de tracción y modos de conducción</p>
+                          <p>Características off-road:</p>
+                          <p>- Suspensión ajustable</p>
+                          <p>- Frenos ABS y control de tracción</p>
+                          <p>Estilo y diseño:</p>
+                          <p>- Diseño agresivo y moderno</p>
+                        </div>
+                      </div>
+                    
+                      <div class="motorcycle">
+                        <img src="/tenere.jpg" width="220" height="240" alt="Yamaha Ténéré 700" class="enlace-imagen">
+                        <div class="motorcycle-info">
+                          <h2>Yamaha Ténéré 700</h2>
+                          <p>Potencia y rendimiento:</p>
+                          <p>- Motor bicilíndrico en paralelo de 689 cc</p>
+                          <p>- Diseño ligero y ágil</p>
+                          <p>Características off-road:</p>
+                          <p>- Suspensión de largo recorrido</p>
+                          <p>- Sistema de frenos ABS desconectable</p>
+                          <p>Estilo y diseño:</p>
+                          <p>- Diseño aventurero y minimalista</p>
+                        </div>
+                      </div>
+                </div>
+                <div id="naked" class="articulo oculto">
+                    <h1>Comparativa Naked</h1>
+                    <div class="motorcycle">
+                        <img src="/bmws1000r.jpg" width="220" height="240" alt="BMW S 1000 R" class="enlace-imagen">
+                        <div class="motorcycle-info">
+                          <h2>BMW S 1000 R</h2>
+                          <p>Potencia y rendimiento:</p>
+                          <p>- Motor de cuatro cilindros en línea de 999 cc</p>
+                          <p>- Control de tracción y modos de conducción</p>
+                          <p>Características de conducción:</p>
+                          <p>- Suspensión ajustable</p>
+                          <p>- Frenos ABS y control de tracción</p>
+                          <p>Estilo y diseño:</p>
+                          <p>- Diseño agresivo y deportivo</p>
+                        </div>
+                      </div>
+                      
+                      <div class="motorcycle">
+                        <img src="/kawaz900.jpg" width="220" height="240" alt="Kawasaki Z900" class="enlace-imagen">
+                        <div class="motorcycle-info">
+                          <h2>Kawasaki Z900</h2>
+                          <p>Potencia y rendimiento:</p>
+                          <p>- Motor de cuatro cilindros en línea de 948 cc</p>
+                          <p>- Control de tracción y modos de conducción</p>
+                          <p>Características de conducción:</p>
+                          <p>- Suspensión ajustable</p>
+                          <p>- Frenos ABS y control de tracción</p>
+                          <p>Estilo y diseño:</p>
+                          <p>- Diseño agresivo y musculoso</p>
+                        </div>
+                      </div>
+                      
+                      <div class="motorcycle">
+                        <img src="/mt09.jpg" width="220" height="240" alt="Yamaha Mt09" class="enlace-imagen">
+                        <div class="motorcycle-info">
+                          <h2>Yamaha MT-09</h2>
+                          <p>Potencia y rendimiento:</p>
+                          <p>- Motor de tres cilindros en línea de 847 cc</p>
+                          <p>- Control de tracción y modos de conducción</p>
+                          <p>Características de conducción:</p>
+                          <p>- Suspensión ajustable</p>
+                          <p>- Frenos ABS y control de tracción</p>
+                          <p>Estilo y diseño:</p>
+                          <p>- Diseño agresivo y urbano</p>
+                        </div>
+                      </div>
+                </div>
+                <div id="scooter" class="articulo oculto">
+                    <h1>Comparativa Scooter</h1>
+                    <div class="motorcycle">
+                        <img src="/bmwscooter.jpg" width="220" height="240" alt="BMW C 650 GT" class="enlace-imagen">
+                        <div class="motorcycle-info">
+                          <h2>BMW C 650 GT</h2>
+                          <p>Potencia y rendimiento:</p>
+                          <p>- Motor bicilíndrico en línea de 647 cc</p>
+                          <p>- Transmisión automática CVT</p>
+                          <p>Características de conducción:</p>
+                          <p>- Sistema de frenos ABS</p>
+                          <p>- Amplio espacio de almacenamiento</p>
+                          <p>Estilo y diseño:</p>
+                          <p>- Diseño elegante y aerodinámico</p>
+                        </div>
+                      </div>
+                      
+                      <div class="motorcycle">
+                        <img src="/kawascooter.jpg" width="220" height="240" alt="Kawasaki J300" class="enlace-imagen">
+                        <div class="motorcycle-info">
+                          <h2>Kawasaki J300</h2>
+                          <p>Potencia y rendimiento:</p>
+                          <p>- Motor de un cilindro de 299 cc</p>
+                          <p>- Transmisión automática CVT</p>
+                          <p>Características de conducción:</p>
+                          <p>- Sistema de frenos ABS</p>
+                          <p>- Espacio de almacenamiento bajo el asiento</p>
+                          <p>Estilo y diseño:</p>
+                          <p>- Diseño moderno y compacto</p>
+                        </div>
+                      </div>
+                      
+                      <div class="motorcycle">
+                        <img src="/yamahaxmax.jpg" width="220" height="240" alt="Yamaha XMAX 300" class="enlace-imagen">
+                        <div class="motorcycle-info">
+                          <h2>Yamaha XMAX 300</h2>
+                          <p>Potencia y rendimiento:</p>
+                          <p>- Motor de un cilindro de 292 cc</p>
+                          <p>- Transmisión automática CVT</p>
+                          <p>Características de conducción:</p>
+                          <p>- Sistema de frenos ABS</p>
+                          <p>- Amplio espacio de almacenamiento</p>
+                          <p>Estilo y diseño:</p>
+                          <p>- Diseño elegante y deportivo</p>
+                        </div>
+                      </div>
+                </div>
+                <div id="chopper" class="articulo oculto">
+                    <h1>Comparativa Chopper</h1>
+                    <div class="motorcycle">
+                        <img src="/bmwchopper.jpg" width="220" height="240" alt="BMW R 18" class="enlace-imagen">
+                        <div class="motorcycle-info">
+                          <h2>BMW R 18</h2>
+                          <p>Potencia y rendimiento:</p>
+                          <p>- Motor bóxer de 1,802 cc</p>
+                          <p>- Transmisión de 6 velocidades</p>
+                          <p>Características de conducción:</p>
+                          <p>- Suspensión de largo recorrido</p>
+                          <p>- Sistema de frenos ABS</p>
+                          <p>Estilo y diseño:</p>
+                          <p>- Diseño clásico y retro</p>
+                        </div>
+                      </div>
+                      
+                      <div class="motorcycle">
+                        <img src="/kawavulcan.jpg" width="220" height="240" alt="Kawasaki Vulcan S" class="enlace-imagen">
+                        <div class="motorcycle-info">
+                          <h2>Kawasaki Vulcan S</h2>
+                          <p>Potencia y rendimiento:</p>
+                          <p>- Motor de dos cilindros en paralelo de 649 cc</p>
+                          <p>- Transmisión de 6 velocidades</p>
+                          <p>Características de conducción:</p>
+                          <p>- Suspensión ajustable</p>
+                          <p>- Sistema de frenos ABS</p>
+                          <p>Estilo y diseño:</p>
+                          <p>- Diseño moderno y personalizable</p>
+                        </div>
+                      </div>
+                      
+                      <div class="motorcycle">
+                        <img src="/yamahachoppper.jpg" width="220" height="240" alt="Yamaha SCR950" class="enlace-imagen">
+                        <div class="motorcycle-info">
+                          <h2>Yamaha SCR950</h2>
+                          <p>Potencia y rendimiento:</p>
+                          <p>- Motor de dos cilindros en V de 942 cc</p>
+                          <p>- Transmisión de 5 velocidades</p>
+                          <p>Características de conducción:</p>
+                          <p>- Suspensión ajustable</p>
+                          <p>- Sistema de frenos ABS</p>
+                          <p>Estilo y diseño:</p>
+                          <p>- Diseño retro y versátil</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+                
+            <div class="col-xs-12 col-sm-3">
+
+                <div class="sidebar">
+                    <div class="article">
+                    <h1>COMPARATIVAS</h1>
+                    <h2><a href="#trail" onclick="muestra('trail')">Comparativa Trail</a></h2>
+                    <h2><a href="#naked" onclick="muestra('naked')">Comparativa Naked</a></h2>
+                    <h2><a href="#scooter" onclick="muestra('scooter')">Comparativa scooter</a></h2>
+                    <h2><a href="#chopper" onclick="muestra('chopper')">Comparativa Chopper</a></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="row">
+        <div class="footer">
+            <div class="col-xs-12">
+                <div class="copyrights">
+                    <h3>Página creada por: Andrés Escudero Planas 2ºGSI curso 2023-2024</h3>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
